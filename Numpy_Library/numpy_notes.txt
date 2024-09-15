@@ -1,0 +1,90 @@
+Arrays can be created using array module or using numpy library
+Numpy array can be multidimensional but module array are only one-dimensional
+
+1-D Arrays
+creating array using numpy
+-> We can create arrays of different data types such as integer,decimal,character,string etc.
+-> It is important that all the elements in a single array are of same data type
+-> Arguments:
+   ~ "int" for integer data type
+   ~ "float" for float data type
+   ~ "str" for string data type
+-> The functions view() and copy() are used to create new arrays from the existing arrays. New arrays are similar to the existing array
+
+creating array using numpy functions:->
+1. arange(value) - it will return array value from 0 to value-1
+2. arange(start,end) - return an array from starting value to ending value
+   the default data type of arange is integer but we can change the data type by providing the value of dtype = numpy.float as the third argument,
+   range() also do the same thing 
+3. linspace(start, end, size) - return an array of size an value from start to end(included) and all the values are at same interval
+4. zeros(shape) - return array of size shape all the values as zero, default data type is float64
+5. ones(shape) - return an array of size shape having value one, default data type is float64
+
+-> Inbuilt functions on arrays makes the task easier in comparison to the Inbuilt functions available on list and tuple
+-> The array created by array module, numpy array has access to many other mathematical, trignometrical, statistical, logarithmic and exponential functions.
+-> array1.min() is equivalent to numpy.min(array1)
+
+Program for using functions on numpy array
+->Modifying an element at a specified index
+->The dtype return the datatype of the elements of the array
+
+Functions returning one single numeric output
+->The mean() function returns the mean of all array elements
+->The median() functon returns the median of all array elements.
+->The min() function returns the minimum element of the array
+->The max() function returns the maximum element of the array
+->The sum() function returns the sum of all array elements
+->The prod() function returns the product of all array elements
+->The cov() function returns the covariance of all array elements
+->The var() function returns the variance of all array elements
+->The std() funtion returns standard deviation of all array elements
+
+Mathematical functions return an array output (all elements)
+->The sort() function returns the elements in a sorted order
+->The power() function returns all elements raised to power of a number
+->The sqrt() function returns the square root of all elements
+->The abs() function returns the suare root of all elements
+
+Trigonometric functions return an array output (all elements)
+->The sin() function returns the sine value of all the elements
+->The cos() function returns the cosine value of all the elements
+->The tan() functin returns the tangent value of al the elements
+
+Logarithmic/Exponential functions return an array output
+->The log() function returns log with exponential base of all elements
+->The log10() function returns the log with base 10 of all elements
+->The exp() function returns the exponential value of all the elements
+
+We can perform basic mathematical operation like addition(+), subtraction(-),multiplication(*),division(/),integer division(//), and modulus(%)
+to perform these operation on two array there size must be same
+
+Relational operators are also used on multiple array for comparison that are <=,>=,>,<==,!=
+
+Multidimensional Arrays
+Creating a multidimensional array
+-> array() - [[],[]] create 2-d array first inner bracket for row and 2nd inner bracket for column and outside bracket for a single array
+-> matrix() - uses semicolon(;) to separate a row from the other
+-> reshape() - functin converts the 1-D array into multidimensional array on the basis of specified argument for rows and column
+-> zero() - create multidimensional array with all values zero
+-> ones() - create multidimensional array with all values one
+
+We can access element with the help of their indexing
+
+Silicing is defined as taking out a part or a piece from the original matrix
+syntax: [begrow:endrow, begcol:endcol]
+           |      |       |      |
+           |      |       |      ending of column
+           |      |       |
+           |      |  begining of column
+           |      |
+           |   ending of row
+           |
+        begining of row
+
+Functions of multidimensional array;
+-> ndim - return the dimension of the array
+-> shape - return the multidimensional array 
+-> transpose() - return a new matrix whose rows are the columns f the original and vice versa
+-> diagonal() - return the diagonal elements
+-> flatten() - return 1-D array by converting the matrix into 1-D array
+-> sort() - it sort the matrix row vice or column vice, default row vice, for column vice pass one more argument as axis=0
